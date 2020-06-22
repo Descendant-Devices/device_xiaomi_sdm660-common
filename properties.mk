@@ -86,13 +86,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Apex
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.apex.updatable=true
-    
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
+    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
+    persist.bluetooth.a2dp_offload.disabled=false \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac \
+    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
+    ro.bluetooth.a2dp_offload.supported=true \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.bluetooth.soc=cherokee
+    ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
