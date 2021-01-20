@@ -3,6 +3,7 @@ type public_adsprpcd_file, file_type;
 type sysfs_fingerprint, fs_type, sysfs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
+type vendor_power_prop, property_type;
 
 # Kcal
 type kcal_dev, sysfs_type, fs_type;
@@ -16,3 +17,7 @@ type sysfs_torch, sysfs_type, fs_type;
 type sysfs_fastcharge, sysfs_type, fs_type;
 type sysfs_headgain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
+type sysfs_headgain, sysfs_type, fs_type;
+type sysfs_torch, sysfs_type, fs_type;
+type sysfs_fps, sysfs_type, fs_type;
+type sysfs_fastcharge, sysfs_type,file_type;
